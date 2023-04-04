@@ -6,6 +6,9 @@ from scipy.optimize import minimize
 # Define the symbols for the assets in the portfolio
 symbols = ['aapl','goog','tlt','msft','ttt']
 
+# Define the risk-free rate
+rf = 0.01
+
 # Download the historical price data for the assets
 prices = yf.download(symbols, start='2015-01-01')['Adj Close']
 
@@ -15,19 +18,20 @@ returns = prices.pct_change().dropna()
 # Calculate the expected returns and covariances of the assets
 mu = returns.mean()
 Sigma = returns.cov()
-
-# Define the objective function for the optimizer
+    
+    # Define the objective function for the optimizer
 def objective(weights):
     port_return = np.dot(weights, mu) * 252 # 252 trading days in a year
     port_var = np.dot(weights, np.dot(Sigma, weights)) * 252 # annualized variance
-    port_sharpe = port_return / np.sqrt(port_var)
+    port_sharpe = (port_return - rf) / np.sqrt(port_var)
     return -port_sharpe
+ 
 
 # Define a new function to calculate the Sharpe ratio
 def sharpe_ratio(weights):
     port_return = np.dot(weights, mu) * 252 # 252 trading days in a year
     port_var = np.dot(weights, np.dot(Sigma, weights)) * 252 # annualized variance
-    port_sharpe = port_return / np.sqrt(port_var)
+    port_sharpe = (port_return - rf) / np.sqrt(port_var)
     return port_sharpe
 
 # Define the constraints for the optimizer
@@ -78,5 +82,3 @@ plt.xlabel('Portfolio Variance')
 plt.ylabel('Portfolio Return')
 plt.colorbar(label='Sharpe Ratio')
 plt.show()
-           
-           
