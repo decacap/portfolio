@@ -49,3 +49,6 @@ print('Weights: ', result.x)
 print('Expected Return: ', expected_return)
 print('Portfolio Volatility: ', portfolio_volatility)
 print('Sharpe Ratio: ', sharpe_ratio)
+
+
+
