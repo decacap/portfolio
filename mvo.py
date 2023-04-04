@@ -11,7 +11,7 @@ data = yf.download(symbols, start='2015-01-01')['Adj Close']
 returns = data.pct_change().dropna()
 
 # Define the risk-free rate
-risk_free_rate = 0.1
+risk_free_rate = 0.01
 
 # Define the objective function to minimize
 def portfolio_variance(weights, returns):
