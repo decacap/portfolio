@@ -22,3 +22,9 @@ There are different methods to find assets to add to a portfolio, depending on t
 5. Socially Responsible Investing: This approach involves investing in assets that align with the investor's values and beliefs, such as environmental sustainability, social justice, or corporate governance. The goal is to achieve financial returns while also making a positive impact on society and the environment.
 
 Ultimately, the choice of method depends on the investor's goals, preferences, and expertise. It's important to conduct thorough research and analysis before making any investment decisions, and to diversify the portfolio across different asset classes and sectors to minimize risk.
+
+---
+
+Additionally, portfolio optimization is a complex and dynamic field, and this code represents a basic implementation. Further considerations such as transaction costs, slippage, and other risk factors may need to be incorporated for a more realistic portfolio optimization. So, it is important to thoroughly understand the assumptions and limitations of the code.
+
+
