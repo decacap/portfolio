@@ -7,7 +7,7 @@ Optimizing a portfolio involves finding the best combination of assets to achiev
 3. Black-Litterman Model: This technique combines the views of investors with the statistical analysis of MVO. The model starts with the market portfolio and adjusts it based on the views of the investors. This helps to ensure that the portfolio is customized to the specific goals and risk tolerance of the investors.
 4. Monte Carlo Simulation: This technique involves running thousands of simulations of different portfolio combinations to determine the probability of achieving a specific set of goals. Monte Carlo simulation takes into account the expected return and volatility of each asset, as well as the correlation between the assets.
 
-Overall, the choice of technique will depend on the specific goals and risk tolerance of the investor, as well as the complexity of the portfolio. It is important to consult with a financial advisor or portfolio manager to determine the best approach for your individual needs.
+Overall, the choice of technique will depend on the specific goals and risk tolerance of the investor, as well as the complexity of the portfolio. 
 
 ---
 
