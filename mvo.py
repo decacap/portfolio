@@ -10,7 +10,7 @@ symbols = ['aapl','goog','tlt','msft','ttt']
 data = yf.download(symbols, start='2015-01-01')['Adj Close']
 returns = data.pct_change().dropna()
 
-# Define the risk-free rate using US treasury 10 year yield
+# Define the risk-free rate
 risk_free_rate = 0.1
 
 # Define the objective function to minimize
