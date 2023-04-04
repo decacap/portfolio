@@ -11,7 +11,7 @@ data = yf.download(symbols, start='2015-01-01')['Adj Close']
 returns = data.pct_change().dropna()
 
 # Define the risk-free rate using US treasury 10 year yield
-risk_free_rate = yf.download('^TNX', start='2015-01-01')['Adj Close'].mean() / 100
+risk_free_rate = 0.1
 
 # Define the objective function to minimize
 def portfolio_variance(weights, returns):
